@@ -8,8 +8,10 @@
 
     public interface IProgrammingLanguageRepository
     {
-        IEnumerable<ProgrammingLanguageIconViewModel> GetAll();
+        IEnumerable<ProgrammingLanguageDetailedViewModel> GetAll();
 
+        IEnumerable<ProgrammingLanguageIconViewModel> GetAllByPartialViewModel();
+        
         ProgrammingLanguageDetailedViewModel GetById(int id);
     }
 }

@@ -28,6 +28,13 @@
         }
 
         [HttpGet]
+        [Route("api/frameworks/partial")]
+        public IHttpActionResult GetAllByPartialViewModel()
+        {
+            return this.Ok(this.frameworks.GetAllByPartialViewModel());
+        }
+
+        [HttpGet]
         [Route("api/frameworks/{id:int}")]
         public IHttpActionResult GetById(int id)
         {

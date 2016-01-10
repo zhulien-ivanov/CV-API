@@ -8,7 +8,9 @@
 
     public interface ILanguageFrameworkRepository
     {
-        IEnumerable<LanguageFrameworkIconViewModel> GetAll();
+        IEnumerable<LanguageFrameworkDetailedViewModel> GetAll();
+
+        IEnumerable<LanguageFrameworkIconViewModel> GetAllByPartialViewModel();
 
         LanguageFrameworkDetailedViewModel GetById(int id);
 

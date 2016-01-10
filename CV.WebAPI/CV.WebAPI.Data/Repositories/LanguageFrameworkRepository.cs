@@ -18,14 +18,27 @@
             this.dbContext = dbContext;
         }
 
-        public IEnumerable<LanguageFrameworkIconViewModel> GetAll()
+        public IEnumerable<LanguageFrameworkDetailedViewModel> GetAll()
+        {
+            return this.dbContext.LanguageFrameworks
+                .Select(x => new LanguageFrameworkDetailedViewModel()
+                    {
+                        Id = x.Id,
+                        Name = x.Name,
+                        ProblemsSolvedScore = x.ProblemsSolvedScore,
+                        TutorialsWatchedScore = x.TutorialsWatchedScore,
+                        WorkOnBiggerProjectsScore = x.WorkOnBiggerProjectsScore
+                    })
+                .ToList();
+        }
+
+        public IEnumerable<LanguageFrameworkIconViewModel> GetAllByPartialViewModel()
         {
             return this.dbContext.LanguageFrameworks
                     .Select(x => new LanguageFrameworkIconViewModel()
                         {
                             Id = x.Id,
-                            Name = x.Name,
-                            ImageLocation = x.ImageLocation
+                            Name = x.Name
                         })
                     .ToList();
         }
@@ -38,7 +51,6 @@
             {
                 Id = item.Id,
                 Name = item.Name,
-                ImageLocation = item.ImageLocation,
                 ProblemsSolvedScore = item.ProblemsSolvedScore,
                 TutorialsWatchedScore = item.TutorialsWatchedScore,
                 WorkOnBiggerProjectsScore = item.WorkOnBiggerProjectsScore
@@ -52,7 +64,6 @@
                     {
                         Id = x.Id,
                         Name = x.Name,
-                        ImageLocation = x.ImageLocation,
                         ProblemsSolvedScore = x.ProblemsSolvedScore,
                         TutorialsWatchedScore = x.TutorialsWatchedScore,
                         WorkOnBiggerProjectsScore = x.WorkOnBiggerProjectsScore

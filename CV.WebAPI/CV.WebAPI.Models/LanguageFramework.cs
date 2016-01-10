@@ -10,9 +10,6 @@
         [Required]
         public string Name { get; set; }
 
-        [Required]
-        public string ImageLocation { get; set; }
-
         public int ProgrammingLanguageId { get; set; }
 
         public virtual ProgrammingLanguage ProgrammingLanguage { get; set; }

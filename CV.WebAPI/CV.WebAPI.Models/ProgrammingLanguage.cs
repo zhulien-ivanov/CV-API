@@ -19,9 +19,6 @@
         public string Name { get; set; }
 
         [Required]
-        public string ImageLocation { get; set; }
-
-        [Required]
         [Range(0, 10)]
         public int TutorialsWatchedScore { get; set; }
 

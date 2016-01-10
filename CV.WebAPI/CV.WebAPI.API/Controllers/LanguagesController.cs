@@ -28,6 +28,13 @@
         }
 
         [HttpGet]
+        [Route("api/languages/partial")]
+        public IHttpActionResult GetAllByPartialViewModel()
+        {
+            return this.Ok(this.languages.GetAllByPartialViewModel());
+        }
+
+        [HttpGet]
         [Route("api/languages/{id:int}")]
         public IHttpActionResult GetById(int id)
         {
