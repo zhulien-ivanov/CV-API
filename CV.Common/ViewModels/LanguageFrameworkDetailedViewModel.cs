@@ -6,8 +6,6 @@
 
         public string Name { get; set; }
 
-        public string ImageLocation { get; set; }
-
         public int TutorialsWatchedScore { get; set; }
 
         public int ProblemsSolvedScore { get; set; }
