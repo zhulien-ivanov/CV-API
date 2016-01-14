@@ -70,5 +70,17 @@
                     })
                 .ToList();
         }
+
+
+        public IEnumerable<LanguageFrameworkIconViewModel> GetByLanguagePartialViewModel(int id)
+        {
+            return this.dbContext.ProgrammingLanguages.Find(id).Frameworks
+                .Select(x => new LanguageFrameworkIconViewModel()
+                    {
+                        Id = x.Id,
+                        Name = x.Name
+                    })
+                .ToList();
+        }
     }
 }

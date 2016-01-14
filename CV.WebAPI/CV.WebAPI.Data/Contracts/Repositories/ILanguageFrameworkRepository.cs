@@ -15,5 +15,7 @@
         LanguageFrameworkDetailedViewModel GetById(int id);
 
         IEnumerable<LanguageFrameworkDetailedViewModel> GetByLanguage(int id);
+
+        IEnumerable<LanguageFrameworkIconViewModel> GetByLanguagePartialViewModel(int id);
     }
 }

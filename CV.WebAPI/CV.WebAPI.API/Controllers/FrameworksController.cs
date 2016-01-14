@@ -47,5 +47,12 @@
         {
             return this.Ok(this.frameworks.GetByLanguage(id));
         }
+
+        [HttpGet]
+        [Route("api/frameworks/bylang/{id:int}/partial")]
+        public IHttpActionResult GetByLanguageByPartialViewModel(int id)
+        {
+            return this.Ok(this.frameworks.GetByLanguagePartialViewModel(id));
+        }
     }
 }
