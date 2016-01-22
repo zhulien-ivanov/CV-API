@@ -15,5 +15,7 @@
         public IDbSet<ProgrammingLanguage> ProgrammingLanguages { get; set; }
 
         public IDbSet<LanguageFramework> LanguageFrameworks { get; set; }
+
+        public IDbSet<Certificate> Certificates { get; set; }
     }
 }

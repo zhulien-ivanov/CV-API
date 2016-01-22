@@ -46,11 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\Repositories\ICertificatesRepository.cs" />
     <Compile Include="Contracts\Repositories\ILanguageFrameworkRepository.cs" />
     <Compile Include="Contracts\Repositories\IProgrammingLanguageRepository.cs" />
     <Compile Include="CVSystemDbContext.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CertificatesRepository.cs" />
     <Compile Include="Repositories\LanguageFrameworkRepository.cs" />
     <Compile Include="Repositories\ProgrammingLanguageRepository.cs" />
   </ItemGroup>

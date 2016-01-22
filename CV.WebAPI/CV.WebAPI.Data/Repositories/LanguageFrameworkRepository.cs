@@ -3,7 +3,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    using CV.Common.ViewModels;
+    using CV.Common.ViewModels.LanguageFramework;
 
     using CV.WebAPI.Data.Contracts.Repositories;
 

@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CertificatesController.cs" />
     <Compile Include="Controllers\FrameworksController.cs" />
     <Compile Include="Controllers\LanguagesController.cs" />
     <Compile Include="Global.asax.cs">

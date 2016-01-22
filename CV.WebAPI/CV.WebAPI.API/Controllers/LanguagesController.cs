@@ -15,7 +15,7 @@
         {
         }
 
-        public LanguagesController(ProgrammingLanguageRepository languagesRepository)
+        public LanguagesController(IProgrammingLanguageRepository languagesRepository)
         {
             this.languages = languagesRepository;
         }

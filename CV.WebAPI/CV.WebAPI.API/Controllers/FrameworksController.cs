@@ -15,7 +15,7 @@
         {
         }
 
-        public FrameworksController(LanguageFrameworkRepository frameworksRepository)
+        public FrameworksController(ILanguageFrameworkRepository frameworksRepository)
         {
             this.frameworks = frameworksRepository;
         }
